@@ -20,7 +20,7 @@ const results = document.querySelector('#results');
     } else {
         
         let totalInches = (feet*12) + inches;
-        let inTcm = Math.floor(totalInches / 0.39370) ;
+        let inTcm = (totalInches / 0.39370) ;
         results.textContent = `${inTcm} cm`;
         document.querySelector('#feet').value = '';
         document.querySelector('#inches').value = '';
